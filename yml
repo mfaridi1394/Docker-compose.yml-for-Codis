@@ -1,0 +1,15 @@
+If someone need Docker compose for Codis this guide maybe help.
+I make new docker image for Codis.
+
+
+version: '3'
+services:
+  codis:
+    image:  mfaridi/codis:latest
+    ports:
+      - "6379:6379"
+      - "9090:9090"
+      - "18080:18080"
+
+
+
